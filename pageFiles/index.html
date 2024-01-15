@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Hemmel - Portfólio</title>
+    <link rel="icon" href="/imgs/arts/boyArt.png">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header> <!--Cabeçalho - Barra de navegação-->
+        <nav class="navbar navbar-expand-lg fixed-top fs-5">
+            <div class="container-fluid py-2">
+                <a class="nav-spacing nav-link milonga-regular yellow-text d-flex justify-content-center ms-2" href="#"
+                    id="portfolio-text">Portfólio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mx-auto mb-lg-0 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="nav-spacing d-flex align-items-center me-4">
+                        <img src="/imgs/icons/telIcon.png" alt="ícone de telefone" class="tel-icon me-3">
+                        <a href="#" class="nav-link yellow-text text-nowrap">11 94488-0786</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--------------------Apresentação do site - Primeiro banner--------------->
+    <section id="welcome-banner" class="d-flex justify-content-center align-items-center flex-column">
+        <h1>Olá, eu sou o <span class="yellow-text">Ricardo Hemmel</span></h1>
+        <p class="fs-5">Estudante de Sistemas para Internet </p>
+        <p class="fs-5">Full stack developer</p>
+        <div class="first-wave"></div> <!--Efeito de onda-->
+    </section>
+
+    <!----------------------------Sessão Sobre Mim------------------------------->
+    <section id="about-me-section" class="bg-mountains-dark">
+        <!--Título da sessão Sobre Mim-->
+        <div class="container d-flex justify-content-center align-items-center flex-column pt-3">
+            <h2 class="yellow-text">Sobre mim</h2>
+            <div class="horizontal-line-for-tittles"></div>
+        </div>
+
+        <!--Conteúdo da sessão Sobre Mim-->
+        <div class="container-fluid container-xl" id="about-me-content-container">
+            <div class="row d-flex justify-content-evenly align-items-center">
+
+                <div class="col col-12 col-md-5 d-flex align-items-center flex-column gap-4">
+                    <!--Foto do Ricardo e Download de CV-->
+                    <img src="/imgs/arts/boyArt.png" id="my-picture" alt="Foto de Ricardo Hemmel">
+                    <button type="button" id="btn-download-cv" class="btn fs-5 fw-semibold px-4 py-1">Download
+                        CV</button>
+                </div>
+
+                <!--Meu nome, Minha ocupação atual e texto sobre mim-->
+                <div class="col col-12 col-md-5" id="container-about-me-text">
+                    <h3>Ricardo Hemmel Helfstein Conceição</h3>
+                    <h4 class="yellow-text">Estudante</h4>
+                    <p class="fs-5">Meu nome é Ricardo, tenho 20 anos e sou um estudante comprometido de Sistemas para
+                        Internet no Centro
+                        Universitário SENAC. Minha trajetória na área de tecnologia começou logo após o término do
+                        ensino
+                        médio, quando me lancei de cabeça nos estudos, com ênfase no desenvolvimento de aplicações para
+                        web.
+                        Estou determinado a aprimorar minhas habilidades e conhecimentos, buscando constantemente
+                        evoluir
+                        nesse fascinante campo da tecnologia.
+                    </p>
+
+                    <!--Dados básicos sobre mim-->
+                    <div class="fs-5 d-flex justify-content-between" id="basic-data-about-me">
+                        <div>
+                            <p class="m-0">Nascimento</p>
+                            <p class="m-0">Telefone</p>
+                            <p class="m-0">Região</p>
+                            <p class="m-0">Email</p>
+                            <p class="m-0">Línguas</p>
+                            <p class="m-0">Trabalho</p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                        </div>
+                        <div id="data-about-me">
+                            <p class="m-0">21/12/2003</p>
+                            <p class="m-0">11 94488-0786</p>
+                            <p class="m-0">Zona Sul, Parelheiros</p>
+                            <p class="m-0">ricardo.helfstein@hotmail.com</p>
+                            <p class="m-0">Português, Inglês</p>
+                            <p class="m-0">Disponível</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-wave"></div> <!--Efeito de onda-->
+
+    </section>
+
+    <!---------------------------Sessão Habilidades------------------------->
+
+    <section id="abilities-section" class="bg-dark-blue">
+
+        <!--Título da sessão Habilidades-->
+        <div class="container d-flex justify-content-center align-items-center flex-column pt-3">
+            <h2 class="yellow-text">Habilidades</h2>
+            <div class="horizontal-line-for-tittles"></div>
+        </div>
+
+        <div class="container" id="abilities-content-container">
+            <div class="row d-flex justify-content-between">
+
+                <!--Texto de competências Técnicas-->
+                <div class="col col-12 col-md-5" id="abilities-text-container">
+                    <h3 class="fs-2">Competências Técnicas</h3>
+                    <p class="fs-5 mt-4">Fruto de anos dedicados à minha formação acadêmica, participação em cursos
+                        online, estudos independentes e experiência profissional, desenvolvi um conjunto sólido de
+                        habilidades. Este repertório, construído ao longo do tempo, reflete não apenas minha paixão pelo
+                        aprendizado, mas também a aplicação prática desses conhecimentos em contextos diversos. A
+                        seguir, apresento algumas das competências que adquiri ao longo dessa jornada.
+                    </p>
+                </div>
+
+
+                <!--Quadro de competências rankeadas-->
+                <div class="col col-12 col-md-5">
+
+
+
+                    <div>  
+
+                        <div>
+                            <p></p>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <p></p>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <p></p>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <p></p>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div>
+                            <p></p>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <p></p>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <p></p>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <p></p>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div>
+                            <p></p>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <p></p>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <p></p>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <p></p>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+    </section>
+
+
+
+    <script defer src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

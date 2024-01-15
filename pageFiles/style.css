@@ -1,0 +1,317 @@
+/*---------------------------------------Fontes importadas e definidas----------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+
+.abel-regular {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.milonga-regular {
+    font-family: "Milonga", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+/*--------------------------------------------Padrões do site------------------------------------*/
+
+html {
+    height: 500vh;
+}
+
+/*Sub linha de títulos de sessões*/
+.horizontal-line-for-tittles {
+    width: 155px;
+    height: 1px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+/*linha auxiliar amarela*/
+
+.horizontal-line-for-tittles::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background-color: #FAC83F;
+    left: 30%;
+}
+
+/*--------------------------------------Cores de texto e plano de fundo------------------------------------------*/
+
+.yellow-text {
+    color: #FAC83F;
+}
+
+.bg-dark-blue {
+    background-color: #0E1518;
+}
+
+.bg-mountains-dark {
+    background-color: #0E171B;
+}
+
+/*------------------------------------Tela principal - Navbar e Background---------------------------------------*/
+
+.nav-spacing {
+    width: 20%;
+}
+
+.tel-icon {
+    width: 22px;
+}
+
+#welcome-banner {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#welcome-banner::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('/imgs/arts/mountainsBG.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+}
+
+h1 {
+    font-size: clamp(1em, 1.7em + 1vw, 4em + 1vw);
+}
+
+.first-wave {
+    background-image: url(/imgs/waveEffect/firstWave.svg);
+    aspect-ratio: 900/207;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0 ;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 478px) {
+    #portfolio-text {
+        opacity: 0;
+    }
+}
+
+/*---------------------------------------Sessão Sobre Mim----------------------------------------*/
+
+#about-me-section {
+    height: fit-content;
+    min-height: 100vh;
+    padding-bottom: 10rem;
+    position: relative;
+}
+
+#about-me-content-container {
+    margin-top: 6rem;
+}
+
+#my-picture {
+    width: 21vw;
+    max-width: 100%;
+    background-color: #234A59;
+}
+
+#btn-download-cv {
+    background-color: #FAC83F;
+    border-radius: 2rem;
+    width: 180px;
+    max-width: 190px;
+}
+
+#data-about-me {
+    width: 67%;
+}
+
+
+.second-wave {
+    background-image: url(/imgs/waveEffect/secondWave.svg);
+    aspect-ratio: 900/207;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0 ;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 1280px) {
+    #my-picture {
+        width: 28vw;
+    }
+
+    #container-about-me-text h3 {
+        font-size: 1.7em !important;
+    }
+
+    #container-about-me-text h4 {
+        font-size: 1.4em !important;
+    }
+
+    #container-about-me-text p {
+        font-size: 1.2em !important;
+    }
+
+    #basic-data-about-me p {
+        font-size: 1em !important;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    #my-picture {
+        width: 33vw;
+    }
+
+    #btn-download-cv {
+        width: 160px;
+        border-radius: 1rem;
+        padding: 5px !important;
+        font-size: 1.2em !important;
+    }
+
+    #container-about-me-text h3 {
+        font-size: 1.5em !important;
+    }
+
+    #container-about-me-text h4 {
+        font-size: 1.2em !important;
+    }
+
+    #container-about-me-text p {
+        font-size: 1.2em !important;
+    }
+
+    #basic-data-about-me p, 
+    #basic-data-about-me span{
+        font-size: 1em !important;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    #my-picture {
+        width: 44vw;
+    }
+
+    #btn-download-cv {
+        width: 150px;
+        border-radius: 0.9rem;
+        padding: 4px !important;
+        font-size: 1.3em !important;
+    }
+
+    #about-me-content-container {
+        margin-top: 4rem;
+    }
+
+    #container-about-me-text {
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    #container-about-me-text > p{
+        width: 80%;
+        text-align: left;
+    }
+
+    #basic-data-about-me p{
+        text-align: left;
+    }
+
+    #data-about-me {
+        width: 50%;
+    }
+
+    #container-about-me-text {
+        gap: 0.8rem !important;
+    }
+
+    #container-about-me-text h3 {
+        font-size: 1.7em !important;
+    }
+
+    #container-about-me-text h4 {
+        font-size: 1.5em !important;
+    }
+
+    #container-about-me-text p {
+        font-size: 1.3em !important;
+    }
+
+    #basic-data-about-me p, 
+    #basic-data-about-me span{
+        font-size: 1em !important;
+    }
+
+}
+
+@media screen and (max-width: 478px) {
+
+    #btn-download-cv {
+        width: 110px;
+        border-radius: 0.9rem;
+        padding: 2px !important;
+        font-size: 1em !important;
+    }
+
+    #container-about-me-text h3 {
+        font-size: 1.5em !important;
+    }
+
+    #container-about-me-text h4 {
+        font-size: 1.4em !important;
+    }
+
+    #container-about-me-text p {
+        font-size: 1.1em !important;
+    }
+
+    #basic-data-about-me p, 
+    #basic-data-about-me span{
+        font-size: 0.7em !important;
+    }
+}
+
+/*---------------------------------------Sessão Habilidades----------------------------------------*/
+
+#abilities-section {
+    height: fit-content;
+    min-height: 100vh;
+    padding-bottom: 10rem;
+}
+
+#abilities-content-container {
+    margin-top: 9rem;
+}
+
+#abilities-text-container {
+}
