@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 
 .abel-regular {
     font-family: "Abel", sans-serif;
@@ -15,6 +16,13 @@
     font-style: normal;
 }
 
+.jura {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 body {
     font-family: "Abel", sans-serif;
     font-weight: 400;
@@ -23,10 +31,6 @@ body {
 }
 
 /*--------------------------------------------Padrões do site------------------------------------*/
-
-html {
-    height: 500vh;
-}
 
 /*Sub linha de títulos de sessões*/
 .horizontal-line-for-tittles {
@@ -105,6 +109,7 @@ h1 {
     background-size: cover;
     position: absolute;
     bottom: 0;
+    left: 0;
 }
 
 /*Responsividade*/
@@ -304,6 +309,7 @@ h1 {
 /*---------------------------------------Sessão Habilidades----------------------------------------*/
 
 #abilities-section {
+    position: relative;
     height: fit-content;
     min-height: fit-content;
     padding-bottom: 10rem;
@@ -329,11 +335,11 @@ hr {
 
 li::marker {
     color: #FAC83F;
-  }
+}
 
 /*Responsividade*/
 
-@media screen and (max-width: 991px) { 
+@media screen and (max-width: 991px) {
 
     #technical-skills-text {
         display: flex;
@@ -358,26 +364,95 @@ li::marker {
         justify-content: center;
     }
 
-    #behavioral-skills-list  ul li{
+    #behavioral-skills-list ul li {
         font-size: 1.15em;
     }
 }
 
-@media screen and (max-width: 478px) { 
+@media screen and (max-width: 478px) {
 
     #technical-skills-text p {
         font-size: 1.1em !important;
+        margin-left: 1em;
     }
 
     #behavioral-skills-text p {
         font-size: 1.1em !important;
+        margin-left: 0.9em;
     }
 
-    #behavioral-skills-list  ul li{
-        font-size: 1em;
+    #behavioral-skills-list ul li {
+        font-size: 0.9em;
     }
 }
 
 /*---------------------------------------Sessão projetos----------------------------------------*/
 
+#projects-section {
+    position: relative;
+    height: fit-content;
+    min-height: fit-content;
+    padding-bottom: 10rem;
+}
 
+#project-cards-container {
+    margin-top: 8rem;
+}
+
+.background-projects {
+    width: 100%;
+    height: 236px;
+    background: linear-gradient(to right bottom, #0C1E22, #2D4A52);
+}
+
+.card{
+    background-color: #0E1518 !important;
+    color: white;
+    min-height: 500px;
+    box-shadow: -15px 7px 20px #000000;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.img-card-resize {
+    width: 120px;
+    height: 120px;
+}
+
+.btn-checkout {
+    width: 100px;
+    background-color: #2C4951;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 2px;
+    font-size: 1.2em;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 1280px) {
+    
+    .card-text {
+        margin-top: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .card:nth-child(-n+2) {
+        margin-bottom: 4rem;
+    }
+
+}
+
+/*---------------------------------------Rodapé----------------------------------------*/
+
+#footer-section {
+    position: relative;
+    height: 100vh;
+    min-height: fit-content;
+    padding-bottom: 10rem;
+}
