@@ -32,6 +32,10 @@ body {
 
 /*--------------------------------------------Padrões do site------------------------------------*/
 
+body {
+    min-width: 320px;
+}
+
 /*Sub linha de títulos de sessões*/
 .horizontal-line-for-tittles {
     width: 155px;
@@ -135,14 +139,13 @@ h1 {
 
 #my-picture {
     width: 20vw;
-    max-width: 100%;
     background-color: #234A59;
 }
 
 #btn-download-cv {
     background-color: #FAC83F;
     border-radius: 2rem;
-    width: 180px;
+    width: fit-content;
     max-width: 190px;
 }
 
@@ -165,23 +168,29 @@ h1 {
 
 @media screen and (max-width: 1280px) {
     #my-picture {
-        width: 28vw;
+        width: 26vw;
+    }
+
+    #btn-download-cv {
+        width: 13vw !important;
+        font-size: 1.5vw !important;
     }
 
     #container-about-me-text h3 {
-        font-size: 1.7em !important;
+        font-size: 2.3vw !important;
     }
 
     #container-about-me-text h4 {
-        font-size: 1.4em !important;
+        font-size: 1.7vw !important;
     }
 
     #container-about-me-text p {
-        font-size: 1.2em !important;
+        font-size: 1.7vw !important;
     }
 
-    #basic-data-about-me p {
-        font-size: 1em !important;
+    #basic-data-about-me p,
+    #basic-data-about-me span {
+        font-size: 1.5vw !important;
     }
 
 }
@@ -189,46 +198,40 @@ h1 {
 @media screen and (max-width: 991px) {
 
     #my-picture {
-        width: 33vw;
+        width: 31vw;
     }
 
     #btn-download-cv {
-        width: 160px;
-        border-radius: 1rem;
-        padding: 5px !important;
-        font-size: 1.2em !important;
+        width: 16vw !important;
+        font-size: 1.9vw !important;
     }
 
     #container-about-me-text h3 {
-        font-size: 1.5em !important;
+        font-size: 2.4vw !important;
     }
 
     #container-about-me-text h4 {
-        font-size: 1.2em !important;
+        font-size: 2.1vw !important;
     }
 
     #container-about-me-text p {
-        font-size: 1.2em !important;
+        font-size: 2.1vw !important;
     }
 
     #basic-data-about-me p,
     #basic-data-about-me span {
-        font-size: 1em !important;
+        font-size: 1.8vw !important;
     }
-
-
 }
 
 @media screen and (max-width: 768px) {
     #my-picture {
-        width: 44vw;
+        width: 34vw;
     }
 
     #btn-download-cv {
-        width: 150px;
-        border-radius: 0.9rem;
-        padding: 4px !important;
-        font-size: 1.3em !important;
+        width: 20vw !important;
+        font-size: 1.9vw !important;
     }
 
     #about-me-content-container {
@@ -261,20 +264,20 @@ h1 {
     }
 
     #container-about-me-text h3 {
-        font-size: 1.7em !important;
+        font-size: 3.2vw !important;
     }
 
     #container-about-me-text h4 {
-        font-size: 1.5em !important;
+        font-size: 3vw !important;
     }
 
     #container-about-me-text p {
-        font-size: 1.3em !important;
+        font-size: 2.4vw !important;
     }
 
     #basic-data-about-me p,
     #basic-data-about-me span {
-        font-size: 1em !important;
+        font-size: 2.3vw !important;
     }
 
 }
@@ -282,28 +285,28 @@ h1 {
 @media screen and (max-width: 478px) {
 
     #btn-download-cv {
-        width: 110px;
-        border-radius: 0.9rem;
-        padding: 2px !important;
-        font-size: 1em !important;
+        width: 30vw !important;
+        font-size: 2.4vw !important;
     }
 
     #container-about-me-text h3 {
-        font-size: 1.5em !important;
+        font-size: 4.7vw !important;
     }
 
     #container-about-me-text h4 {
-        font-size: 1.4em !important;
+        font-size: 4.2vw !important;
     }
 
     #container-about-me-text p {
-        font-size: 1.1em !important;
+        font-size: 4vw !important;
     }
 
     #basic-data-about-me p,
     #basic-data-about-me span {
-        font-size: 0.7em !important;
+        font-size: 3.5vw !important;
+        margin-right: 5rem;
     }
+
 }
 
 /*---------------------------------------Sessão Habilidades----------------------------------------*/
@@ -319,18 +322,40 @@ h1 {
     margin-top: 9rem;
 }
 
-.star-size {
-    width: 1.1rem;
-    height: 1.1rem;
+#technical-skills-text h3 {
+    font-size: 2.2em !important;
+}
+
+#technical-skills-text p {
+    font-size: 1.3em !important;
+    margin-top: 2.3rem;
+}
+
+#technical-skills-box p {
+    font-size: 1.2em;
 }
 
 .abilities-fs {
     font-size: 1.3em;
 }
 
+#technical-skills-box div img {
+    width: 20px;
+    height: auto;
+}
+
 hr {
     width: 60%;
     margin: 7rem auto;
+}
+
+#behavioral-skills-text h3 {
+    font-size: 2.2em !important;
+}
+
+#behavioral-skills-text p {
+    font-size: 1.3em !important;
+    margin-top: 2.3rem;
 }
 
 li::marker {
@@ -339,13 +364,79 @@ li::marker {
 
 /*Responsividade*/
 
+@media screen and (max-width: 1280px) {
+
+    #technical-skills-text h3 {
+        font-size: 2.8vw !important;
+    }
+
+    #technical-skills-text p {
+        font-size: 1.7vw !important;
+        margin-top: 2rem;
+    }
+
+    .abilities-fs {
+        font-size: 1.5vw;
+    }
+
+    #technical-skills-box div img {
+        width: 1.6vw;
+        height: auto;
+    }
+
+    #behavioral-skills-text h3 {
+        font-size: 2.8vw !important;
+    }
+    
+    #behavioral-skills-text p {
+        font-size: 1.7vw !important;
+        margin-top: 2rem;
+    }
+
+    #behavioral-skills-list ul li {
+        font-size: 2vw !important;
+    }
+
+}
+
 @media screen and (max-width: 991px) {
+
+    #technical-skills-text h3 {
+        font-size: 3vw !important;
+    }
+
+    #technical-skills-text p {
+        font-size: 2.1vw !important;
+        margin-top: 2rem;
+    }
+
+    .abilities-fs {
+        font-size: 2vw;
+    }
+
+    #technical-skills-box div img {
+        width: 2vw;
+        height: auto;
+    }
+
+    #behavioral-skills-text h3 {
+        font-size: 3vw !important;
+    }
+    
+    #behavioral-skills-text p {
+        font-size: 2.1vw !important;
+        margin-top: 2rem;
+    }
+
+    #behavioral-skills-list ul li {
+        font-size: 2.1vw !important; 
+    }
 
     #technical-skills-text {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1.2rem;
     }
 
     #abilities-content-container {
@@ -365,24 +456,77 @@ li::marker {
     }
 
     #behavioral-skills-list ul li {
-        font-size: 1.15em;
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #technical-skills-text h3 {
+        font-size: 3.2vw !important;
+    }
+
+    #technical-skills-text p {
+        font-size: 2.4vw !important;
+        margin-top: 2rem;
+    }
+
+    .abilities-fs {
+        font-size: 2.4vw;
+    }
+
+    #technical-skills-box div img {
+        width: 2.4vw;
+        height: auto;
+    }
+
+    #behavioral-skills-text h3 {
+        font-size: 3.2vw !important;
+    }
+    
+    #behavioral-skills-text p {
+        font-size: 2.4vw !important;
+        margin-top: 2rem;   
+    }
+
+    #behavioral-skills-list ul li {
+        font-size: 2.4vw !important; 
     }
 }
 
 @media screen and (max-width: 478px) {
 
-    #technical-skills-text p {
-        font-size: 1.1em !important;
-        margin-left: 1em;
+    #technical-skills-text h3 {
+        font-size: 4.7vw !important;
     }
 
+    #technical-skills-text p {
+        font-size: 4vw !important;
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    .abilities-fs {
+        font-size: 3.5vw;
+    }
+
+    #technical-skills-box div img {
+        width: 3.5vw;
+        height: auto;
+    }
+
+    #behavioral-skills-text h3 {
+        font-size: 4.7vw !important;
+    }
+    
     #behavioral-skills-text p {
-        font-size: 1.1em !important;
-        margin-left: 0.9em;
+        font-size: 4vw !important;
+        margin-top: 2rem;
+        margin-left: 0.5rem;
     }
 
     #behavioral-skills-list ul li {
-        font-size: 0.9em;
+        font-size: 4vw !important; 
     }
 }
 
@@ -408,8 +552,9 @@ li::marker {
 .card {
     background-color: #0E1518 !important;
     color: white;
-    min-height: 500px;
+    min-height: 50vh;
     box-shadow: -15px 7px 20px #000000;
+    padding-bottom: 2rem;
 }
 
 .card-title {
@@ -434,16 +579,58 @@ li::marker {
 
 @media screen and (max-width: 1280px) {
 
-    .card-text {
-        margin-top: 1.2rem;
+    .card {
+        width: 25vw !important;
     }
+
+    .card-title {
+        font-size: 1.4em !important;
+    }
+
+    .card-text {
+        font-size: 1.1em !important;
+    }
+
 
 }
 
 @media screen and (max-width: 991px) {
 
+    .card {
+        width: 50vw !important;
+        text-align: center;
+    }
+
     .card:nth-child(-n+2) {
         margin-bottom: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #project-cards-container {
+        margin-top: 4rem !important; 
+    }
+
+    .card {
+        width: 60vw !important;
+        min-height: 55vh;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 478px) {
+
+    .card {
+        width: 80vw !important;
+        min-height: 55vh;
+        text-align: left;
+    }
+
+    .btn-checkout {
+        width: 24vw !important;
+        font-size: 4.5vw;
     }
 
 }
@@ -508,7 +695,7 @@ li::marker {
 }
 
 @media screen and (max-width: 500px) {
- 
+
     #contact-method-box p {
         font-size: 4vw !important;
         margin-left: 0.5em !important;
