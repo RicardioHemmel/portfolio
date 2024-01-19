@@ -21,7 +21,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 body {
     font-family: "Abel", sans-serif;
@@ -134,7 +134,7 @@ h1 {
 }
 
 #my-picture {
-    width: 21vw;
+    width: 20vw;
     max-width: 100%;
     background-color: #234A59;
 }
@@ -405,7 +405,7 @@ li::marker {
     background: linear-gradient(to right bottom, #0C1E22, #2D4A52);
 }
 
-.card{
+.card {
     background-color: #0E1518 !important;
     color: white;
     min-height: 500px;
@@ -433,7 +433,7 @@ li::marker {
 /*Responsividade*/
 
 @media screen and (max-width: 1280px) {
-    
+
     .card-text {
         margin-top: 1.2rem;
     }
@@ -452,7 +452,78 @@ li::marker {
 
 #footer-section {
     position: relative;
-    height: 100vh;
+    height: fit-content;
     min-height: fit-content;
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
 }
+
+#contact-footer-img {
+    aspect-ratio: 9/12;
+    width: 210px;
+}
+
+.footer-icons-resize {
+    width: 36px;
+    height: 36px;
+}
+
+#contact-method-box {
+    margin-top: 2.5rem;
+}
+
+#contact-method-box> :nth-child(n+2) {
+    margin-top: 1rem;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 991px) {
+
+    #footer-container {
+        padding: 0rem 3rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #footer-container {
+        padding: 0rem 1rem;
+    }
+
+    #contact-footer-img {
+        width: 25vw;
+        margin-top: 3rem;
+    }
+
+    .footer-icons-resize {
+        width: 29px;
+        height: 29px;
+    }
+
+    #contact-method-box p {
+        font-size: 1.2em !important;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+ 
+    #contact-method-box p {
+        font-size: 4vw !important;
+        margin-left: 0.5em !important;
+    }
+
+    #contact-footer-img {
+        width: 32vw;
+        margin-top: 3rem;
+    }
+
+    .footer-icons-resize {
+        width: 6.5vw;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 478px) {}
