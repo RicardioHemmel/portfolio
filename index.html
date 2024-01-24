@@ -12,7 +12,7 @@
 
 <body>
     <header> <!--Cabeçalho - Barra de navegação-->
-        <nav class="navbar navbar-expand-lg fixed-top fs-5">
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top fs-5">
             <div class="container-fluid py-2">
                 <a class="nav-spacing nav-link milonga-regular yellow-text d-flex justify-content-center ms-2" href="#"
                     id="portfolio-text">Portfólio
@@ -28,21 +28,22 @@
                             <a class="nav-link text-light" aria-current="page" href="#">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Sobre</a>
+                            <a class="nav-link text-light" href="#about-me-section">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Habilidades</a>
+                            <a class="nav-link text-light" href="#abilities-section">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Projetos</a>
+                            <a class="nav-link text-light" href="#projects-section">Projetos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Contato</a>
+                            <a class="nav-link text-light" href="#footer-section">Contato</a>
                         </li>
                     </ul>
-                    <div class="nav-spacing d-flex align-items-center me-4">
+                    <div class="nav-spacing d-flex align-items-center me-4" id="contact-header">
                         <img src="/imgs/icons/telIcon.png" alt="ícone de telefone" class="tel-icon me-3">
-                        <a href="#" class="nav-link yellow-text text-nowrap">11 94488-0786</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511944880786" target="_blank"
+                            class="nav-link yellow-text text-nowrap">11 94488-0786</a>
                     </div>
                 </div>
             </div>
@@ -72,8 +73,9 @@
                 <div class="col col-12 col-md-5 d-flex align-items-center flex-column gap-4">
                     <!--Foto do Ricardo e Download de CV-->
                     <img src="/imgs/arts/boyArt.png" id="my-picture" alt="Foto de Ricardo Hemmel">
-                    <a id="btn-download-cv" class="btn fs-5 fw-semibold px-4 py-1">Download
-                        CV</a>
+                    <a href="/cv/Currículo Ricardo Hemmel Helfstein Conceição.pdf" download id="btn-download-cv"
+                        class="fs-5 fw-semibold px-4 py-1" role="button">Download CV</a>
+
                 </div>
 
                 <!--Meu nome, Minha ocupação atual e texto sobre mim-->
@@ -336,8 +338,10 @@
                                 desenvolvido com HTML, CSS e JS.
                             </p>
                             <div class="d-flex justify-content-around">
-                                <a href="#" class="btn btn-checkout">Conferir</a>
-                                <a href="#" class="btn btn-checkout">Github</a>
+                                <a href="https://ricardiohemmel.github.io/Quiz-de-Jogos-PW/" target="_blank"
+                                    class="btn btn-checkout">Conferir</a>
+                                <a href="https://github.com/RicardioHemmel/Quiz-de-Jogos-PW" target="_blank"
+                                    class="btn btn-checkout">Github</a>
                             </div>
                         </div>
                     </div>
@@ -355,8 +359,35 @@
                                 desenvolvido com linguagem de servidor PHP e Bootstrap.
                             </p>
                             <div class="d-flex justify-content-around">
-                                <a href="#" class="btn btn-checkout">Conferir</a>
-                                <a href="#" class="btn btn-checkout">Github</a>
+                                <!--Botão para o modal-->
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#charlieModal"
+                                    id="charlie-modal-btn">
+                                    Não hospedado
+                                </button>
+                                <a href="https://github.com/CRUD-Tokyo-Streetwear/commercialWebStore" target="_blank"
+                                    class="btn btn-checkout">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Site não Hospedado-->
+                <div class="modal fade" id="charlieModal" tabindex="-1" aria-labelledby="charlieModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="charlieModal">Charlie Streetwear</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Esse site é uma aplicação onde é necessário o uso de um servidor local como XAMPP para
+                                seu uso. Caso queria testar acesse o meu github para ter acesso aos arquivos. <br>Obs: Não deixe de ler o read.me
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://github.com/CRUD-Tokyo-Streetwear/commercialWebStore" target="_blank" type="button" class="btn btn-primary">Github</a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                             </div>
                         </div>
                     </div>
@@ -375,8 +406,10 @@
                                 Feito apenas com HTML e CSS. (Site não responsivo).
                             </p>
                             <div class="d-flex justify-content-around">
-                                <a href="#" class="btn btn-checkout">Conferir</a>
-                                <a href="#" class="btn btn-checkout">Github</a>
+                                <a href="https://helpingorganization.github.io/filhosDaCorrente/" target="_blank"
+                                    class="btn btn-checkout">Conferir</a>
+                                <a href="https://github.com/helpingOrganization/filhosDaCorrente" target="_blank"
+                                    class="btn btn-checkout">Github</a>
                             </div>
                         </div>
                     </div>
@@ -392,7 +425,8 @@
         <footer>
 
             <!--Container métodos de contato e imagem-->
-            <div class="container-fluid container-lg d-flex justify-content-between align-items-center pt-5" id="footer-container">
+            <div class="container-fluid container-lg d-flex justify-content-between align-items-center pt-5"
+                id="footer-container">
 
                 <div id="title-and-text-box">
                     <h3 class="yellow-text fs-2">Contate-me</h3>
@@ -400,32 +434,32 @@
                     <!--Caixa com métodos de contato-->
                     <div id="contact-method-box">
                         <!--Outlook-->
-                        <div class="d-flex align-items-center">
+                        <a href="mailto:ricardo.helfstein@hotmail.com" target="_blank" class="d-flex align-items-center nav-link">
                             <img class="footer-icons-resize" src="/imgs/icons/outlookIcon.png"
                                 alt="Ícone do Outlook"></img>
                             <p class="m-0 fs-5 ms-4">ricardo.helfstein@hotmail.com</p>
-                        </div>
+                        </a>
 
                         <!--Linkedin-->
-                        <div class="d-flex align-items-center">
+                        <a href="https://www.linkedin.com/in/ricardo-hemmel-a6b97626b/" target="_blank" class="d-flex align-items-center nav-link">
                             <img class="footer-icons-resize" src="/imgs/icons/linkedinIcon.png"
                                 alt="Ícone do Linkedin"></img>
                             <p class="m-0 fs-5 ms-4">Ricardo H. H. Conceição</p>
-                        </div>
+                        </a>
 
                         <!--Github-->
-                        <div class="d-flex align-items-center">
+                        <a href="https://github.com/RicardioHemmel" target="_blank" class="d-flex align-items-center nav-link">
                             <img class="footer-icons-resize" src="/imgs/icons/githubIcon.png"
                                 alt="Ícone do Github"></img>
                             <p class="m-0 fs-5 ms-4">RicardioHemmel</p>
-                        </div>
+                        </a>
 
-                         <!--WhatsApp-->
-                         <div class="d-flex align-items-center">
+                        <!--WhatsApp-->
+                        <a href="https://api.whatsapp.com/send?phone=5511944880786" target="_blank" class="d-flex align-items-center nav-link">
                             <img class="footer-icons-resize" src="/imgs/icons/whatsappIcon.png"
                                 alt="Ícone do WhatsApp"></img>
                             <p class="m-0 fs-5 ms-4">11 94488-0786</p>
-                        </div>
+                        </a>
 
                     </div>
                 </div>
@@ -442,7 +476,7 @@
 
 
 
-
+    <script src="script.js"></script>
     <script defer src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 

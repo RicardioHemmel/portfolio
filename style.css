@@ -36,6 +36,19 @@ body {
     min-width: 320px;
 }
 
+#navbar.nav-bar-background-effect {
+    background-color: #0E1518;
+}
+
+#navbar.nav-bar-transition-effect {
+    padding-top: 0;
+    transition: ease-in-out 0.4s;
+}
+
+.toggle-nav-bar-background {
+    background-color: #0E1518;
+}
+
 /*Sub linha de títulos de sessões*/
 .horizontal-line-for-tittles {
     width: 155px;
@@ -66,13 +79,25 @@ body {
 }
 
 .bg-mountains-dark {
-    background-color: #0E171B;
+    background: linear-gradient(to bottom, #0E171B, #1b313a);
+
 }
 
 /*------------------------------------Tela principal - Navbar e Background---------------------------------------*/
 
+#navbar {
+    padding-top: 1.5rem;
+    transition: ease-in-out 0.4s;
+}
+
 .nav-spacing {
     width: 20%;
+}
+
+#navbarTogglerDemo02 ul li{
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 .tel-icon {
@@ -118,7 +143,22 @@ h1 {
 
 /*Responsividade*/
 
+@media screen and (max-width: 991px) {
+    #contact-header {
+        display: none !important;
+    }
+}
+
 @media screen and (max-width: 478px) {
+
+    #welcome-banner h1 {
+        font-size: 8vw !important;
+    }
+
+    #welcome-banner p {
+        font-size: 4.5vw !important;
+    }
+
     #portfolio-text {
         opacity: 0;
     }
@@ -143,10 +183,14 @@ h1 {
 }
 
 #btn-download-cv {
+    text-align: center;
     background-color: #FAC83F;
     border-radius: 2rem;
     width: fit-content;
     max-width: 190px;
+    text-decoration: none;
+    color: black;
+    z-index: 1;
 }
 
 #data-about-me {
@@ -319,7 +363,7 @@ h1 {
 }
 
 #abilities-content-container {
-    margin-top: 9rem;
+    margin-top: 6rem;
 }
 
 #technical-skills-text h3 {
@@ -387,7 +431,7 @@ li::marker {
     #behavioral-skills-text h3 {
         font-size: 2.8vw !important;
     }
-    
+
     #behavioral-skills-text p {
         font-size: 1.7vw !important;
         margin-top: 2rem;
@@ -422,14 +466,14 @@ li::marker {
     #behavioral-skills-text h3 {
         font-size: 3vw !important;
     }
-    
+
     #behavioral-skills-text p {
         font-size: 2.1vw !important;
         margin-top: 2rem;
     }
 
     #behavioral-skills-list ul li {
-        font-size: 2.1vw !important; 
+        font-size: 2.1vw !important;
     }
 
     #technical-skills-text {
@@ -483,14 +527,14 @@ li::marker {
     #behavioral-skills-text h3 {
         font-size: 3.2vw !important;
     }
-    
+
     #behavioral-skills-text p {
         font-size: 2.4vw !important;
-        margin-top: 2rem;   
+        margin-top: 2rem;
     }
 
     #behavioral-skills-list ul li {
-        font-size: 2.4vw !important; 
+        font-size: 2.4vw !important;
     }
 }
 
@@ -518,7 +562,7 @@ li::marker {
     #behavioral-skills-text h3 {
         font-size: 4.7vw !important;
     }
-    
+
     #behavioral-skills-text p {
         font-size: 4vw !important;
         margin-top: 2rem;
@@ -526,7 +570,7 @@ li::marker {
     }
 
     #behavioral-skills-list ul li {
-        font-size: 4vw !important; 
+        font-size: 4vw !important;
     }
 }
 
@@ -575,6 +619,24 @@ li::marker {
     font-size: 1.2em;
 }
 
+#charlie-modal-btn{
+    width: 110px;
+    background-color: #2C4951;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 2px;
+    font-size: 1.1em;
+}
+
+#charlie-modal-btn:hover {
+    background-color: transparent;
+}
+
+.modal-content {
+    background-color: rgb(26, 26, 26);
+}
+
+
 /*Responsividade*/
 
 @media screen and (max-width: 1280px) {
@@ -610,7 +672,7 @@ li::marker {
 @media screen and (max-width: 768px) {
 
     #project-cards-container {
-        margin-top: 4rem !important; 
+        margin-top: 4rem !important;
     }
 
     .card {
@@ -631,6 +693,11 @@ li::marker {
     .btn-checkout {
         width: 24vw !important;
         font-size: 4.5vw;
+    }
+
+    #charlie-modal-btn{
+        width: 26vw !important;
+        font-size: 4vw;
     }
 
 }
@@ -712,5 +779,3 @@ li::marker {
     }
 
 }
-
-@media screen and (max-width: 478px) {}
