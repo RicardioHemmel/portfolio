@@ -180,6 +180,8 @@ h1 {
 #my-picture {
     width: 20vw;
     background-color: #234A59;
+    border: solid #0E1518 4px;
+    box-shadow: -12px 7px 30px #000000;
 }
 
 #btn-download-cv {
@@ -212,7 +214,7 @@ h1 {
 
 @media screen and (max-width: 1280px) {
     #my-picture {
-        width: 26vw;
+        width: 30vw;
     }
 
     #btn-download-cv {
@@ -242,7 +244,7 @@ h1 {
 @media screen and (max-width: 991px) {
 
     #my-picture {
-        width: 31vw;
+        width: 35vw;
     }
 
     #btn-download-cv {
@@ -270,7 +272,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
     #my-picture {
-        width: 34vw;
+        width: 40vw;
     }
 
     #btn-download-cv {
@@ -327,6 +329,10 @@ h1 {
 }
 
 @media screen and (max-width: 478px) {
+
+    #my-picture {
+        width: 50vw;
+    }
 
     #btn-download-cv {
         width: 30vw !important;

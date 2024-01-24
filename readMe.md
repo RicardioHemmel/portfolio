@@ -1,3 +1,3 @@
 Portfólio - Ricardo Hemmel:
 
-Corrigir menu hambúrguer -> ao clica-lo add uma cor de background a navbar.
+Portfólio feito com carinho para divulgar minhas habilidades no mercado de trabalho.
