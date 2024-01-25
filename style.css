@@ -151,6 +151,11 @@ h1 {
     font-size: clamp(1em, 1.7em + 1vw, 4em + 1vw);
 }
 
+.navbar-toggler {
+    border: solid rgba(20, 20, 20, 0.849) 2px !important;
+    background-color: #3a3a3a0c;
+}
+
 /*Responsividade*/
 
 @media screen and (max-width: 991px) {
@@ -188,7 +193,7 @@ h1 {
 }
 
 #my-picture {
-    width: 20vw;
+    width: 370px;
     background-color: #234A59;
     border: solid #0E1518 4px;
     box-shadow: -12px 7px 30px #000000;
@@ -318,7 +323,7 @@ h1 {
     }
 
     #container-about-me-text p {
-        font-size: 2.4vw !important;
+        font-size: 2.6vw !important;
     }
 
     #basic-data-about-me p,
@@ -517,7 +522,7 @@ li::marker {
     }
 
     #technical-skills-text p {
-        font-size: 2.4vw !important;
+        font-size: 2.6vw !important;
         margin-top: 2rem;
     }
 
@@ -535,12 +540,12 @@ li::marker {
     }
 
     #behavioral-skills-text p {
-        font-size: 2.4vw !important;
+        font-size: 2.6vw !important;
         margin-top: 2rem;
     }
 
     #behavioral-skills-list ul li {
-        font-size: 2.4vw !important;
+        font-size: 2.6vw !important;
     }
 }
 
