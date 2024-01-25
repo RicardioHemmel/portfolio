@@ -68,6 +68,27 @@ body {
     left: 30%;
 }
 
+.first-wave {
+    background-image: url('./imgs/waveEffect/firstWave.svg');
+    aspect-ratio: 900/207;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.second-wave {
+    background-image: url('./imgs/waveEffect/secondWave.svg');
+    aspect-ratio: 900/207;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+}
+
 /*--------------------------------------Cores de texto e plano de fundo------------------------------------------*/
 
 .yellow-text {
@@ -118,7 +139,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url('imgs/arts/mountainsBG.jpg');
+    background-image: url('./imgs/arts/mountainsBG.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -128,17 +149,6 @@ body {
 
 h1 {
     font-size: clamp(1em, 1.7em + 1vw, 4em + 1vw);
-}
-
-.first-wave {
-    background-image: url('imgs/waveEffect/firstWave.svg');
-    aspect-ratio: 900/207;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 /*Responsividade*/
@@ -199,16 +209,6 @@ h1 {
     width: 67%;
 }
 
-
-.second-wave {
-    background-image: url(imgs/waveEffect/secondWave.svg);
-    aspect-ratio: 900/207;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    bottom: 0;
-}
 
 /*Responsividade*/
 
