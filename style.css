@@ -131,7 +131,7 @@ h1 {
 }
 
 .first-wave {
-    background-image: url(imgs/waveEffect/firstWave.svg);
+    background-image: url('imgs/waveEffect/firstWave.svg');
     aspect-ratio: 900/207;
     width: 100%;
     background-repeat: no-repeat;
