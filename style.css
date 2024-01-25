@@ -118,7 +118,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url('/imgs/arts/mountainsBG.jpg');
+    background-image: url('imgs/arts/mountainsBG.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -131,7 +131,7 @@ h1 {
 }
 
 .first-wave {
-    background-image: url(/imgs/waveEffect/firstWave.svg);
+    background-image: url(imgs/waveEffect/firstWave.svg);
     aspect-ratio: 900/207;
     width: 100%;
     background-repeat: no-repeat;
@@ -201,7 +201,7 @@ h1 {
 
 
 .second-wave {
-    background-image: url(/imgs/waveEffect/secondWave.svg);
+    background-image: url(imgs/waveEffect/secondWave.svg);
     aspect-ratio: 900/207;
     width: 100%;
     background-repeat: no-repeat;
