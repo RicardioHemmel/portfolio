@@ -629,15 +629,15 @@ li::marker {
 
 .modal-btn {
     width: 110px;
-    background-color: #2C4951 !important;
-    color: white !important;
+    background-color: #2C4951;
+    color: white;
     border-radius: 1.5rem;
     padding: 2px;
     font-size: 1.1em;
 }
 
 .modal-btn:hover {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 .modal-content {
