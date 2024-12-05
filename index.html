@@ -82,17 +82,13 @@
                 <div class="col col-12 col-md-5" id="container-about-me-text">
                     <h3>Ricardo Hemmel Helfstein Conceição</h3>
                     <h4 class="yellow-text">Estudante</h4>
-                    <p class="fs-5">Meu nome é Ricardo, tenho 20 anos e sou estudante de Sistemas para
-                        Internet no Centro
-                        Universitário SENAC. Minha trajetória na área de tecnologia começou logo após o término do
-                        ensino
-                        médio, quando iniciei nos estudos da área com ênfase no desenvolvimento de aplicações para
-                        web.
-                        <br>
-                        Além disso, tenho experiência profissional de mais de dois anos em escritório na parte
-                        administrativa.
-                        Durante esse período, pude aprimorar minhas habilidades em lidar com questões
-                        administrativas e regulamentares de uma empresa.
+                    <p class="fs-5">Meu nome é Ricardo Hemmel, tenho 20 anos e sou estudante de Sistemas para Internet
+                        no Centro Universitário SENAC. Iniciei minha trajetória acadêmica em Ciência da Computação logo
+                        após concluir o ensino médio, mas, após um ano, decidi migrar para o curso atual, buscando
+                        especialização no desenvolvimento de soluções para web. Além da formação acadêmica, possuo
+                        experiência prática em escritórios e suporte de TI na Subprefeitura da Capela do Socorro, onde
+                        desenvolvi habilidades como atendimento ao cliente, resolução de problemas técnicos, gestão de
+                        processos administrativos e inovação em soluções práticas.
                     </p>
 
                     <!--Dados básicos sobre mim-->
@@ -232,7 +228,7 @@
                             <img src="imgs/icons/filledStar.png">
                             <img src="imgs/icons/filledStar.png">
                             <img src="imgs/icons/filledStar.png">
-                            <img src="imgs/icons/unfilledStar.png">
+                            <img src="imgs/icons/filledStar.png">
                             <img src="imgs/icons/unfilledStar.png">
                         </div>
                     </div>
@@ -302,6 +298,7 @@
                         <li>Curso Power BI para Iniciantes - Hashtag treinamentos</li>
                         <li>Curso de Inglês do básico ao avançado - Instituto Nossa Senhora de Fátima</li>
                         <li>Git e Github para iniciantes - Udemy</li>
+                        <li>Curso de Cloud AWS - Udemy</li>
                     </ul>
                 </div>
 
@@ -330,23 +327,51 @@
                 <!--Projeto 1-->
                 <div class="card col col-9 col-md-8 col-lg-3 px-0 border-0 rounded-5">
                     <div class="d-flex justify-content-center background-projects rounded-4 py-5">
-                        <img src="imgs/arts/pacman.png" class="card-img-top img-card-resize" alt="Imagem do Pacman">
+                        <img src="imgs/arts/alphaLogo.png" class="card-img-top img-card-resize" alt="Imagem do Pacman">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title jura yellow-text fs-4">Gaming Quiz</h5>
+                        <h5 class="card-title jura yellow-text fs-4">Alpha - Hardware Store</h5>
                         <div class="d-flex flex-column justify-content-around" style="height: 80%;">
-                            <p class="card-text fs-5">Um quiz simples do nicho gamer de 10 perguntas. Projeto
-                                desenvolvido com HTML, CSS e JS.
+                            <p class="card-text fs-5">Um aplicativo de e-commerce para peças de hardware, desenvolvido
+                                no Android Studio.
                             </p>
                             <div class="d-flex justify-content-around">
-                                <a href="https://ricardiohemmel.github.io/Quiz-de-Jogos-PW/" target="_blank"
-                                    class="btn btn-checkout">Conferir</a>
-                                <a href="https://github.com/RicardioHemmel/Quiz-de-Jogos-PW" target="_blank"
+                                <button type="button" class="btn modal-btn" data-bs-toggle="modal"
+                                    data-bs-target="#alphaModal">
+                                    Não hospedado
+                                </button>
+                                <a href="https://github.com/Alpha-Computers-TSI/Alpha" target="_blank"
                                     class="btn btn-checkout">Github</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Modal Site não Hospedado-->
+                <div class="modal fade" id="alphaModal" tabindex="-1" aria-labelledby="alphaModal" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="alphaModal">Alpha - Hardware Store</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Esse aplicativo precisa da ferramenta de desenvolvimento Android Studio para compilar
+                                todos os arquivos e gerar um
+                                executável no smartphone para testar. Segue link para vídeo do projeto: <a
+                                    href="https://drive.google.com/file/d/1EIX22uwRGhjSQ7T1Wrc5lGBfrgBUD5q-/view?usp=sharing" target="_blank">Vídeo
+                                    do Projeto</a>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://github.com/Alpha-Computers-TSI/Alpha" target="_blank"
+                                    type="button" class="btn btn-primary">Github</a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <!--Projeto 2-->
                 <div class="card col col-9 col-md-8 col-lg-3 px-0 border-0 rounded-5">
@@ -361,8 +386,8 @@
                             </p>
                             <div class="d-flex justify-content-around">
                                 <!--Botão para o modal-->
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#charlieModal"
-                                    id="charlie-modal-btn">
+                                <button type="button" class="btn modal-btn" data-bs-toggle="modal"
+                                    data-bs-target="#charlieModal">
                                     Não hospedado
                                 </button>
                                 <a href="https://github.com/CRUD-Tokyo-Streetwear/commercialWebStore" target="_blank"
@@ -408,8 +433,8 @@
                                 Laravel, Ajax, JS e PHP
                             </p>
                             <div class="d-flex justify-content-around">
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#foxModal"
-                                    id="charlie-modal-btn">
+                                <button type="button" class="btn modal-btn" data-bs-toggle="modal"
+                                    data-bs-target="#foxModal">
                                     Não hospedado
                                 </button>
                                 <a href="https://github.com/Fox-Loja-de-Brinquedos/Fox" target="_blank"
@@ -420,18 +445,20 @@
                 </div>
 
                 <!-- Modal Site não Hospedado-->
-                <div class="modal fade" id="foxModal" tabindex="-1" aria-labelledby="foxModal"
-                    aria-hidden="true">
+                <div class="modal fade" id="foxModal" tabindex="-1" aria-labelledby="foxModal" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="charlieModal">Fox</h1>
+                                <h1 class="modal-title fs-5" id="charlieModal">Fox - Loja de Brinquedos</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                Esse site foi desenvolvido utilizando o framework de PHP Laravel impossibilitando uma hospedagem simples no github.
-                                Segue link para vídeo do projeto: <a href="https://drive.google.com/file/d/1RqzTzKRH7rrpwMuO9kXK_OsR2KeBS7ke/view?usp=sharing">Vídeo do Projeto</a>
+                                Esse site foi desenvolvido utilizando o framework de PHP Laravel impossibilitando uma
+                                hospedagem simples no github.
+                                Segue link para vídeo do projeto: <a
+                                    href="https://drive.google.com/file/d/1RqzTzKRH7rrpwMuO9kXK_OsR2KeBS7ke/view?usp=sharing" target="_blank">Vídeo
+                                    do Projeto</a>
                             </div>
                             <div class="modal-footer">
                                 <a href="https://github.com/CRUD-Tokyo-Streetwear/commercialWebStore" target="_blank"

@@ -112,7 +112,7 @@ body {
     width: 20%;
 }
 
-#navbarTogglerDemo02 ul li{
+#navbarTogglerDemo02 ul li {
     display: flex;
     justify-content: center;
     align-self: center;
@@ -627,7 +627,7 @@ li::marker {
     font-size: 1.2em;
 }
 
-#charlie-modal-btn{
+.modal-btn {
     width: 110px;
     background-color: #2C4951;
     color: white;
@@ -636,7 +636,7 @@ li::marker {
     font-size: 1.1em;
 }
 
-#charlie-modal-btn:hover {
+.modal-btn:hover {
     background-color: transparent;
 }
 
@@ -703,7 +703,7 @@ li::marker {
         font-size: 4.5vw;
     }
 
-    #charlie-modal-btn{
+    .modal-btn {
         width: 26vw !important;
         font-size: 4vw;
     }
