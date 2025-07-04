@@ -591,7 +591,7 @@ li::marker {
     padding-bottom: 10rem;
 }
 
-#project-cards-container {
+.project-cards-container {
     margin-top: 8rem;
 }
 
@@ -615,7 +615,7 @@ li::marker {
 
 .img-card-resize {
     width: 120px;
-    height: 120px;
+    object-fit: contain;
 }
 
 .btn-checkout {
@@ -644,6 +644,12 @@ li::marker {
     background-color: rgb(26, 26, 26);
 }
 
+.developing-more-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+}
+
 
 /*Responsividade*/
 
@@ -669,9 +675,6 @@ li::marker {
     .card {
         width: 50vw !important;
         text-align: center;
-    }
-
-    .card:nth-child(-n+2) {
         margin-bottom: 4rem;
     }
 
@@ -679,7 +682,7 @@ li::marker {
 
 @media screen and (max-width: 768px) {
 
-    #project-cards-container {
+    .project-cards-container {
         margin-top: 4rem !important;
     }
 
@@ -785,5 +788,4 @@ li::marker {
         width: 6.5vw;
         height: auto;
     }
-
 }
