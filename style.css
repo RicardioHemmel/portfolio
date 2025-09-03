@@ -1,791 +1,749 @@
 /*---------------------------------------Fontes importadas e definidas----------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Milonga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
 
 .abel-regular {
-    font-family: "Abel", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .milonga-regular {
-    font-family: "Milonga", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Milonga", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .jura {
-    font-family: "Jura", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-    min-width: 320px;
-    font-family: "Abel", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
+  min-width: 320px;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
 }
 
 /*--------------------------------------------Padrões do site------------------------------------*/
 
 #navbar.nav-bar-background-effect {
-    background-color: #0E1518;
+  background-color: #0e1518;
 }
 
 #navbar.nav-bar-transition-effect {
-    padding-top: 0;
-    transition: ease-in-out 0.4s;
+  padding-top: 0;
+  transition: ease-in-out 0.4s;
 }
 
 .toggle-nav-bar-background {
-    background-color: #0E1518;
+  background-color: #0e1518;
 }
 
 /*Sub linha de títulos de sessões*/
 .horizontal-line-for-tittles {
-    width: 155px;
-    height: 1px;
-    background-color: #ffffff;
-    position: relative;
+  width: 155px;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
 }
 
 /*linha auxiliar amarela*/
 
 .horizontal-line-for-tittles::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 1px;
-    background-color: #FAC83F;
-    left: 30%;
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: #fac83f;
+  left: 30%;
 }
 
 .first-wave {
-    background-image: url('./imgs/waveEffect/firstWave.svg');
-    aspect-ratio: 900/207;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  background-image: url("./imgs/waveEffect/firstWave.svg");
+  aspect-ratio: 900/207;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .second-wave {
-    background-image: url('./imgs/waveEffect/secondWave.svg');
-    aspect-ratio: 900/207;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    bottom: 0;
+  background-image: url("./imgs/waveEffect/secondWave.svg");
+  aspect-ratio: 900/207;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
 }
 
 /*--------------------------------------Cores de texto e plano de fundo------------------------------------------*/
 
 .yellow-text {
-    color: #FAC83F;
+  color: #fac83f;
 }
 
 .bg-dark-blue {
-    background-color: #0E1518;
+  background-color: #0e1518;
 }
 
 .bg-mountains-dark {
-    background: linear-gradient(to bottom, #0E171B, #1b313a);
-
+  background: linear-gradient(to bottom, #0e171b, #1b313a);
 }
 
 /*------------------------------------Tela principal - Navbar e Background---------------------------------------*/
 
 #navbar {
-    padding-top: 1.5rem;
-    transition: ease-in-out 0.4s;
+  padding-top: 1.5rem;
+  transition: ease-in-out 0.4s;
 }
 
 .nav-spacing {
-    width: 20%;
+  width: 20%;
 }
 
 #navbarTogglerDemo02 ul li {
-    display: flex;
-    justify-content: center;
-    align-self: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 .tel-icon {
-    width: 22px;
+  width: 22px;
 }
 
 #welcome-banner {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #welcome-banner::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url('./imgs/arts/mountainsBG.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    filter: brightness(0.4);
-    z-index: -1;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("./imgs/arts/mountainsBG.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.4);
+  z-index: -1;
 }
 
 h1 {
-    font-size: clamp(1em, 1.7em + 1vw, 4em + 1vw);
+  font-size: clamp(1em, 1.7em + 1vw, 4em + 1vw);
 }
 
 .navbar-toggler {
-    border: solid rgba(20, 20, 20, 0.849) 2px !important;
-    background-color: #3a3a3a0c;
+  border: solid rgba(20, 20, 20, 0.849) 2px !important;
+  background-color: #3a3a3a0c;
 }
 
 /*Responsividade*/
 
 @media screen and (max-width: 991px) {
-    #contact-header {
-        display: none !important;
-    }
+  #contact-header {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 478px) {
+  #welcome-banner h1 {
+    font-size: 8vw !important;
+  }
 
-    #welcome-banner h1 {
-        font-size: 8vw !important;
-    }
+  #welcome-banner p {
+    font-size: 4.5vw !important;
+  }
 
-    #welcome-banner p {
-        font-size: 4.5vw !important;
-    }
-
-    #portfolio-text {
-        opacity: 0;
-    }
+  #portfolio-text {
+    opacity: 0;
+  }
 }
 
 /*---------------------------------------Sessão Sobre Mim----------------------------------------*/
 
 #about-me-section {
-    height: fit-content;
-    min-height: 100vh;
-    padding-bottom: 10rem;
-    position: relative;
+  height: fit-content;
+  min-height: 100vh;
+  padding-bottom: 10rem;
+  position: relative;
 }
 
 #about-me-content-container {
-    margin-top: 6rem;
+  margin-top: 6rem;
 }
 
 #my-picture {
-    width: 370px;
-    background-color: #234A59;
-    border: solid #0E1518 4px;
-    box-shadow: -12px 7px 30px #000000;
+  width: 370px;
+  background-color: #234a59;
+  border: solid #0e1518 4px;
+  box-shadow: -12px 7px 30px #000000;
 }
 
 #btn-download-cv {
-    text-align: center;
-    background-color: #FAC83F;
-    border-radius: 2rem;
-    width: fit-content;
-    max-width: 190px;
-    text-decoration: none;
-    color: black;
-    z-index: 1;
+  text-align: center;
+  background-color: #fac83f;
+  border-radius: 2rem;
+  width: fit-content;
+  max-width: 190px;
+  text-decoration: none;
+  color: black;
+  z-index: 1;
 }
 
 #data-about-me {
-    width: 67%;
+  width: 67%;
 }
-
 
 /*Responsividade*/
 
 @media screen and (max-width: 1280px) {
-    #my-picture {
-        width: 30vw;
-    }
+  #my-picture {
+    width: 30vw;
+  }
 
-    #btn-download-cv {
-        width: 13vw !important;
-        font-size: 1.5vw !important;
-    }
+  #btn-download-cv {
+    width: 13vw !important;
+    font-size: 1.5vw !important;
+  }
 
-    #container-about-me-text h3 {
-        font-size: 2.3vw !important;
-    }
+  #container-about-me-text h3 {
+    font-size: 2.3vw !important;
+  }
 
-    #container-about-me-text h4 {
-        font-size: 1.7vw !important;
-    }
+  #container-about-me-text h4 {
+    font-size: 1.7vw !important;
+  }
 
-    #container-about-me-text p {
-        font-size: 1.7vw !important;
-    }
+  #container-about-me-text p {
+    font-size: 1.7vw !important;
+  }
 
-    #basic-data-about-me p,
-    #basic-data-about-me span {
-        font-size: 1.5vw !important;
-    }
-
+  #basic-data-about-me p,
+  #basic-data-about-me span {
+    font-size: 1.5vw !important;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  #my-picture {
+    width: 35vw;
+  }
 
-    #my-picture {
-        width: 35vw;
-    }
+  #btn-download-cv {
+    width: 16vw !important;
+    font-size: 1.9vw !important;
+  }
 
-    #btn-download-cv {
-        width: 16vw !important;
-        font-size: 1.9vw !important;
-    }
+  #container-about-me-text h3 {
+    font-size: 2.4vw !important;
+  }
 
-    #container-about-me-text h3 {
-        font-size: 2.4vw !important;
-    }
+  #container-about-me-text h4 {
+    font-size: 2.1vw !important;
+  }
 
-    #container-about-me-text h4 {
-        font-size: 2.1vw !important;
-    }
+  #container-about-me-text p {
+    font-size: 2.1vw !important;
+  }
 
-    #container-about-me-text p {
-        font-size: 2.1vw !important;
-    }
-
-    #basic-data-about-me p,
-    #basic-data-about-me span {
-        font-size: 1.8vw !important;
-    }
+  #basic-data-about-me p,
+  #basic-data-about-me span {
+    font-size: 1.8vw !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    #my-picture {
-        width: 40vw;
-    }
+  #my-picture {
+    width: 40vw;
+  }
 
-    #btn-download-cv {
-        width: 20vw !important;
-        font-size: 1.9vw !important;
-    }
+  #btn-download-cv {
+    width: 20vw !important;
+    font-size: 1.9vw !important;
+  }
 
-    #about-me-content-container {
-        margin-top: 4rem;
-    }
+  #about-me-content-container {
+    margin-top: 4rem;
+  }
 
-    #container-about-me-text {
-        text-align: center !important;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 2rem;
-    }
+  #container-about-me-text {
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
 
-    #container-about-me-text>p {
-        width: 80%;
-        text-align: left;
-    }
+  #container-about-me-text > p {
+    width: 80%;
+    text-align: left;
+  }
 
-    #basic-data-about-me p {
-        text-align: left;
-    }
+  #basic-data-about-me p {
+    text-align: left;
+  }
 
-    #data-about-me {
-        width: 50%;
-    }
+  #data-about-me {
+    width: 50%;
+  }
 
-    #container-about-me-text {
-        gap: 0.8rem !important;
-    }
+  #container-about-me-text {
+    gap: 0.8rem !important;
+  }
 
-    #container-about-me-text h3 {
-        font-size: 3.2vw !important;
-    }
+  #container-about-me-text h3 {
+    font-size: 3.2vw !important;
+  }
 
-    #container-about-me-text h4 {
-        font-size: 3vw !important;
-    }
+  #container-about-me-text h4 {
+    font-size: 3vw !important;
+  }
 
-    #container-about-me-text p {
-        font-size: 2.6vw !important;
-    }
+  #container-about-me-text p {
+    font-size: 2.6vw !important;
+  }
 
-    #basic-data-about-me p,
-    #basic-data-about-me span {
-        font-size: 2.3vw !important;
-    }
-
+  #basic-data-about-me p,
+  #basic-data-about-me span {
+    font-size: 2.3vw !important;
+  }
 }
 
 @media screen and (max-width: 478px) {
+  #my-picture {
+    width: 50vw;
+  }
 
-    #my-picture {
-        width: 50vw;
-    }
+  #btn-download-cv {
+    width: 30vw !important;
+    font-size: 2.4vw !important;
+  }
 
-    #btn-download-cv {
-        width: 30vw !important;
-        font-size: 2.4vw !important;
-    }
+  #container-about-me-text h3 {
+    font-size: 4.7vw !important;
+  }
 
-    #container-about-me-text h3 {
-        font-size: 4.7vw !important;
-    }
+  #container-about-me-text h4 {
+    font-size: 4.2vw !important;
+  }
 
-    #container-about-me-text h4 {
-        font-size: 4.2vw !important;
-    }
+  #container-about-me-text p {
+    font-size: 4vw !important;
+  }
 
-    #container-about-me-text p {
-        font-size: 4vw !important;
-    }
-
-    #basic-data-about-me p,
-    #basic-data-about-me span {
-        font-size: 3.5vw !important;
-        margin-right: 5rem;
-    }
-
+  #basic-data-about-me p,
+  #basic-data-about-me span {
+    font-size: 3.5vw !important;
+    margin-right: 5rem;
+  }
 }
 
 /*---------------------------------------Sessão Habilidades----------------------------------------*/
 
 #abilities-section {
-    position: relative;
-    height: fit-content;
-    min-height: fit-content;
-    padding-bottom: 10rem;
+  position: relative;
+  height: fit-content;
+  min-height: fit-content;
+  padding-bottom: 10rem;
+}
+
+.iconResize {
+  width: 45px;
+  height: auto;
 }
 
 #abilities-content-container {
-    margin-top: 6rem;
+  margin-top: 6rem;
 }
 
 #technical-skills-text h3 {
-    font-size: 2.2em !important;
+  font-size: 2.2em !important;
 }
 
 #technical-skills-text p {
-    font-size: 1.3em !important;
-    margin-top: 2.3rem;
+  font-size: 1.3em !important;
+  margin-top: 2.3rem;
 }
 
 #technical-skills-box p {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 .abilities-fs {
-    font-size: 1.3em;
-}
-
-#technical-skills-box div img {
-    width: 20px;
-    height: auto;
+  font-size: 1.3em;
 }
 
 hr {
-    width: 60%;
-    margin: 7rem auto;
+  width: 60%;
+  margin: 7rem auto;
 }
 
 #behavioral-skills-text h3 {
-    font-size: 2.2em !important;
+  font-size: 2.2em !important;
 }
 
 #behavioral-skills-text p {
-    font-size: 1.3em !important;
-    margin-top: 2.3rem;
+  font-size: 1.3em !important;
+  margin-top: 2.3rem;
 }
 
 li::marker {
-    color: #FAC83F;
+  color: #fac83f;
 }
 
 /*Responsividade*/
 
 @media screen and (max-width: 1280px) {
+  #technical-skills-text h3 {
+    font-size: 2.8vw !important;
+  }
 
-    #technical-skills-text h3 {
-        font-size: 2.8vw !important;
-    }
+  #technical-skills-text p {
+    font-size: 1.7vw !important;
+    margin-top: 2rem;
+  }
 
-    #technical-skills-text p {
-        font-size: 1.7vw !important;
-        margin-top: 2rem;
-    }
+  .abilities-fs {
+    font-size: 1.5vw;
+  }
 
-    .abilities-fs {
-        font-size: 1.5vw;
-    }
+  #behavioral-skills-text h3 {
+    font-size: 2.8vw !important;
+  }
 
-    #technical-skills-box div img {
-        width: 1.6vw;
-        height: auto;
-    }
+  #behavioral-skills-text p {
+    font-size: 1.7vw !important;
+    margin-top: 2rem;
+  }
 
-    #behavioral-skills-text h3 {
-        font-size: 2.8vw !important;
-    }
-
-    #behavioral-skills-text p {
-        font-size: 1.7vw !important;
-        margin-top: 2rem;
-    }
-
-    #behavioral-skills-list ul li {
-        font-size: 2vw !important;
-    }
-
+  #behavioral-skills-list ul li {
+    font-size: 2vw !important;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  #technical-skills-text h3 {
+    font-size: 3vw !important;
+  }
 
-    #technical-skills-text h3 {
-        font-size: 3vw !important;
-    }
+  #technical-skills-text p {
+    font-size: 2.1vw !important;
+    margin-top: 2rem;
+  }
 
-    #technical-skills-text p {
-        font-size: 2.1vw !important;
-        margin-top: 2rem;
-    }
+  .abilities-fs {
+    font-size: 2vw;
+  }
 
-    .abilities-fs {
-        font-size: 2vw;
-    }
+  #behavioral-skills-text h3 {
+    font-size: 3vw !important;
+  }
 
-    #technical-skills-box div img {
-        width: 2vw;
-        height: auto;
-    }
+  #behavioral-skills-text p {
+    font-size: 2.1vw !important;
+    margin-top: 2rem;
+  }
 
-    #behavioral-skills-text h3 {
-        font-size: 3vw !important;
-    }
+  #behavioral-skills-list ul li {
+    font-size: 2.1vw !important;
+  }
 
-    #behavioral-skills-text p {
-        font-size: 2.1vw !important;
-        margin-top: 2rem;
-    }
+  #technical-skills-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
 
-    #behavioral-skills-list ul li {
-        font-size: 2.1vw !important;
-    }
+  #abilities-content-container {
+    margin-top: 5rem;
+  }
 
-    #technical-skills-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 1.2rem;
-    }
+  #behavioral-skills-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
 
-    #abilities-content-container {
-        margin-top: 5rem;
-    }
+  #behavioral-skills-list {
+    display: flex;
+    justify-content: center;
+  }
 
-    #behavioral-skills-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 2.5rem;
-    }
-
-    #behavioral-skills-list {
-        display: flex;
-        justify-content: center;
-    }
-
-    #behavioral-skills-list ul li {
-        font-size: 4vw;
-    }
+  #behavioral-skills-list ul li {
+    font-size: 4vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  #technical-skills-text h3 {
+    font-size: 3.2vw !important;
+  }
 
-    #technical-skills-text h3 {
-        font-size: 3.2vw !important;
-    }
+  #technical-skills-text p {
+    font-size: 2.6vw !important;
+    margin-top: 2rem;
+  }
 
-    #technical-skills-text p {
-        font-size: 2.6vw !important;
-        margin-top: 2rem;
-    }
+  .iconResize {
+    width: 34px;
+    height: auto;
+  }
 
-    .abilities-fs {
-        font-size: 2.4vw;
-    }
+  .abilities-fs {
+    font-size: 2.4vw;
+  }
 
-    #technical-skills-box div img {
-        width: 2.4vw;
-        height: auto;
-    }
+  #behavioral-skills-text h3 {
+    font-size: 3.2vw !important;
+  }
 
-    #behavioral-skills-text h3 {
-        font-size: 3.2vw !important;
-    }
+  #behavioral-skills-text p {
+    font-size: 2.6vw !important;
+    margin-top: 2rem;
+  }
 
-    #behavioral-skills-text p {
-        font-size: 2.6vw !important;
-        margin-top: 2rem;
-    }
-
-    #behavioral-skills-list ul li {
-        font-size: 2.6vw !important;
-    }
+  #behavioral-skills-list ul li {
+    font-size: 2.6vw !important;
+  }
 }
 
 @media screen and (max-width: 478px) {
+  #technical-skills-text h3 {
+    font-size: 4.7vw !important;
+  }
 
-    #technical-skills-text h3 {
-        font-size: 4.7vw !important;
-    }
+  #technical-skills-text p {
+    font-size: 4vw !important;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+  }
 
-    #technical-skills-text p {
-        font-size: 4vw !important;
-        margin-top: 2rem;
-        margin-left: 0.5rem;
-    }
+  .abilities-fs {
+    font-size: 3.5vw;
+  }
 
-    .abilities-fs {
-        font-size: 3.5vw;
-    }
+  #behavioral-skills-text h3 {
+    font-size: 4.7vw !important;
+  }
 
-    #technical-skills-box div img {
-        width: 3.5vw;
-        height: auto;
-    }
+  #behavioral-skills-text p {
+    font-size: 4vw !important;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+  }
 
-    #behavioral-skills-text h3 {
-        font-size: 4.7vw !important;
-    }
-
-    #behavioral-skills-text p {
-        font-size: 4vw !important;
-        margin-top: 2rem;
-        margin-left: 0.5rem;
-    }
-
-    #behavioral-skills-list ul li {
-        font-size: 4vw !important;
-    }
+  #behavioral-skills-list ul li {
+    font-size: 4vw !important;
+  }
 }
 
 /*---------------------------------------Sessão projetos----------------------------------------*/
 
 #projects-section {
-    position: relative;
-    height: fit-content;
-    min-height: fit-content;
-    padding-bottom: 10rem;
+  position: relative;
+  height: fit-content;
+  min-height: fit-content;
+  padding-bottom: 10rem;
 }
 
 .project-cards-container {
-    margin-top: 8rem;
+  margin-top: 8rem;
 }
 
 .background-projects {
-    width: 100%;
-    height: 236px;
-    background: linear-gradient(to right bottom, #0C1E22, #2D4A52);
+  width: 100%;
+  height: 236px;
+  background: linear-gradient(to right bottom, #0c1e22, #2d4a52);
 }
 
 .card {
-    background-color: #0E1518 !important;
-    color: white;
-    min-height: 50vh;
-    box-shadow: -15px 7px 20px #000000;
-    padding-bottom: 2rem;
+  background-color: #0e1518 !important;
+  color: white;
+  min-height: 50vh;
+  box-shadow: -15px 7px 20px #000000;
+  padding-bottom: 2rem;
 }
 
 .card-title {
-    text-align: center;
+  text-align: center;
 }
 
 .img-card-resize {
-    width: 120px;
-    object-fit: contain;
+  width: 120px;
+  object-fit: contain;
 }
 
 .btn-checkout {
-    width: 100px;
-    background-color: #2C4951;
-    color: white;
-    border-radius: 1.5rem;
-    padding: 2px;
-    font-size: 1.2em;
+  width: 100px;
+  background-color: #2c4951;
+  color: white;
+  border-radius: 1.5rem;
+  padding: 2px;
+  font-size: 1.2em;
 }
 
 .modal-btn {
-    width: 110px;
-    background-color: #2C4951;
-    color: white;
-    border-radius: 1.5rem;
-    padding: 2px;
-    font-size: 1.1em;
+  width: 110px;
+  background-color: #2c4951;
+  color: white;
+  border-radius: 1.5rem;
+  padding: 2px;
+  font-size: 1.1em;
 }
 
 .modal-btn:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .modal-content {
-    background-color: rgb(26, 26, 26);
+  background-color: rgb(26, 26, 26);
 }
 
 .developing-more-img {
-    width: 130px;
-    height: 130px;
-    border-radius: 100%;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
 }
-
 
 /*Responsividade*/
 
 @media screen and (max-width: 1280px) {
+  .card {
+    width: 25vw !important;
+  }
 
-    .card {
-        width: 25vw !important;
-    }
+  .card-title {
+    font-size: 1.4em !important;
+  }
 
-    .card-title {
-        font-size: 1.4em !important;
-    }
-
-    .card-text {
-        font-size: 1.1em !important;
-    }
-
-
+  .card-text {
+    font-size: 1.1em !important;
+  }
 }
 
 @media screen and (max-width: 991px) {
-
-    .card {
-        width: 50vw !important;
-        text-align: center;
-        margin-bottom: 4rem;
-    }
-
+  .card {
+    width: 50vw !important;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .project-cards-container {
+    margin-top: 4rem !important;
+  }
 
-    .project-cards-container {
-        margin-top: 4rem !important;
-    }
-
-    .card {
-        width: 60vw !important;
-        min-height: 55vh;
-        text-align: left;
-    }
+  .card {
+    width: 60vw !important;
+    min-height: 55vh;
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 478px) {
+  .card {
+    width: 80vw !important;
+    min-height: 55vh;
+    text-align: left;
+  }
 
-    .card {
-        width: 80vw !important;
-        min-height: 55vh;
-        text-align: left;
-    }
+  .btn-checkout {
+    width: 24vw !important;
+    font-size: 4.5vw;
+  }
 
-    .btn-checkout {
-        width: 24vw !important;
-        font-size: 4.5vw;
-    }
-
-    .modal-btn {
-        width: 26vw !important;
-        font-size: 4vw;
-    }
-
+  .modal-btn {
+    width: 26vw !important;
+    font-size: 4vw;
+  }
 }
 
 /*---------------------------------------Rodapé----------------------------------------*/
 
 #footer-section {
-    position: relative;
-    height: fit-content;
-    min-height: fit-content;
-    padding-bottom: 4rem;
+  position: relative;
+  height: fit-content;
+  min-height: fit-content;
+  padding-bottom: 4rem;
 }
 
 #contact-footer-img {
-    aspect-ratio: 9/12;
-    width: 210px;
+  aspect-ratio: 9/12;
+  width: 210px;
 }
 
 .footer-icons-resize {
-    width: 36px;
-    height: 36px;
+  width: 36px;
+  height: 36px;
 }
 
 #contact-method-box {
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 
-#contact-method-box> :nth-child(n+2) {
-    margin-top: 1rem;
+#contact-method-box > :nth-child(n + 2) {
+  margin-top: 1rem;
 }
 
 /*Responsividade*/
 
 @media screen and (max-width: 991px) {
-
-    #footer-container {
-        padding: 0rem 3rem;
-    }
-
+  #footer-container {
+    padding: 0rem 3rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  #footer-container {
+    padding: 0rem 1rem;
+  }
 
-    #footer-container {
-        padding: 0rem 1rem;
-    }
+  #contact-footer-img {
+    width: 25vw;
+    margin-top: 3rem;
+  }
 
-    #contact-footer-img {
-        width: 25vw;
-        margin-top: 3rem;
-    }
+  .footer-icons-resize {
+    width: 29px;
+    height: 29px;
+  }
 
-    .footer-icons-resize {
-        width: 29px;
-        height: 29px;
-    }
-
-    #contact-method-box p {
-        font-size: 1.2em !important;
-    }
-
+  #contact-method-box p {
+    font-size: 1.2em !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  #contact-method-box p {
+    font-size: 4vw !important;
+    margin-left: 0.5em !important;
+  }
 
-    #contact-method-box p {
-        font-size: 4vw !important;
-        margin-left: 0.5em !important;
-    }
+  #contact-footer-img {
+    width: 32vw;
+    margin-top: 3rem;
+  }
 
-    #contact-footer-img {
-        width: 32vw;
-        margin-top: 3rem;
-    }
-
-    .footer-icons-resize {
-        width: 6.5vw;
-        height: auto;
-    }
+  .footer-icons-resize {
+    width: 6.5vw;
+    height: auto;
+  }
 }
